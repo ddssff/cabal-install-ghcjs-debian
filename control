@@ -1,0 +1,81 @@
+Source: haskell-cabal-install-ghcjs
+Maintainer: Debian Haskell Group <pkg-haskell-maintainers@lists.alioth.debian.org>
+Priority: optional
+Section: haskell
+Build-Depends: debhelper (>= 7.0)
+               , haskell-devscripts (>= 0.8)
+               , cdbs
+               , ghc
+               , ghc-prof
+               , libghc-cabal-ghcjs-dev (>= 1.21.0.0)
+               , libghc-cabal-ghcjs-dev (<< 1.21.0.1)
+               , libghc-cabal-ghcjs-prof (>= 1.21.0.0)
+               , libghc-cabal-ghcjs-prof (<< 1.21.0.1)
+               , libghc-http-dev (>= 1:4000.2.5)
+               , libghc-http-dev (<< 1:4000.3)
+               , libghc-http-prof (>= 1:4000.2.5)
+               , libghc-http-prof (<< 1:4000.3)
+               , libghc-mtl-dev (>= 2.0)
+               , libghc-mtl-dev (<< 3)
+               , libghc-mtl-prof (>= 2.0)
+               , libghc-mtl-prof (<< 3)
+               , libghc-network-dev (>= 2.0)
+               , libghc-network-dev (<< 2.6)
+               , libghc-network-prof (>= 2.0)
+               , libghc-network-prof (<< 2.6)
+               , libghc-random-dev (>= 1)
+               , libghc-random-dev (<< 1.1)
+               , libghc-random-prof (>= 1)
+               , libghc-random-prof (<< 1.1)
+               , libghc-stm-dev (>= 2.0)
+               , libghc-stm-dev (<< 3)
+               , libghc-stm-prof (>= 2.0)
+               , libghc-stm-prof (<< 3)
+               , libghc-zlib-dev (>= 0.5.3)
+               , libghc-zlib-dev (<< 0.6)
+               , libghc-zlib-prof (>= 0.5.3)
+               , libghc-zlib-prof (<< 0.6)
+Build-Depends-Indep: ghc-doc
+                     , libghc-http-doc (>= 1:4000.2.5)
+                     , libghc-http-doc (<< 1:4000.3)
+                     , libghc-mtl-doc (>= 2.0)
+                     , libghc-mtl-doc (<< 3)
+                     , libghc-network-doc (>= 2.0)
+                     , libghc-network-doc (<< 2.6)
+                     , libghc-random-doc (>= 1)
+                     , libghc-random-doc (<< 1.1)
+                     , libghc-stm-doc (>= 2.0)
+                     , libghc-stm-doc (<< 3)
+                     , libghc-zlib-doc (>= 0.5.3)
+                     , libghc-zlib-doc (<< 0.6)
+
+Package: cabal-install-ghcjs
+Architecture: any
+Section: misc
+Depends: ${shlibs:Depends}
+         , ${haskell:Depends}
+         , ${misc:Depends}
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Conflicts: ${haskell:Conflicts}
+           , cabal-install
+           , haskell-cabal-install-ghcjs-utils
+Provides: ${haskell:Provides}
+          , cabal-install
+          , haskell-cabal-install-ghcjs-utils
+Replaces: ${haskell:Replaces}
+          , cabal-install
+          , haskell-cabal-install-ghcjs-utils
+Description: The command-line interface for Cabal and Hackage.
+ The \'cabal\' command-line program simplifies the process of managing
+ Haskell software by automating the fetching, configuration, compilation
+ and installation of Haskell libraries and programs.
+ .
+  Author: Lemmih <lemmih@gmail.com>
+ Paolo Martini <paolo@nemail.it>
+ Bjorn Bringert <bjorn@bringert.net>
+ Isaac Potoczny-Jones <ijones@syntaxpolice.org>
+ Duncan Coutts <duncan@community.haskell.org>
+  Upstream-Maintainer: cabal-devel@haskell.org
+ .
+ Files associated with the cabal-install package.
